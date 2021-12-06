@@ -35,19 +35,27 @@ namespace RPG.Combat
 
         private void AttackBehavior()
         {
+            
             if (timeSinceLastAttack >= timeBetweenAttacks)
             {
                 transform.LookAt(target.transform);
                 //This will trigger the Hit() event
-                GetComponent<Animator>().SetTrigger("Attack");
+                TriggerAttack();
                 timeSinceLastAttack = 0f;
             }
-            
+
+        }
+
+        private void TriggerAttack()
+        {
+            GetComponent<Animator>().ResetTrigger("StopAttack");
+            GetComponent<Animator>().SetTrigger("Attack");
         }
 
         //Animation event! (in unarmed attack animation)
         void Hit()
         {
+            if (target == null) return;
             target.TakeDamage(punchDamage);
         }
 
@@ -71,10 +79,15 @@ namespace RPG.Combat
 
         public void Cancel()
         {
-            GetComponent<Animator>().SetTrigger("StopAttack");
+            StopAttack();
             target = null;
         }
 
-  
+        private void StopAttack()
+        {
+            GetComponent<Animator>().ResetTrigger("Attack");
+            GetComponent<Animator>().SetTrigger("StopAttack");
+        }
+
     }
 }

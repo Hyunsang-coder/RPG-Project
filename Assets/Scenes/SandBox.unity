@@ -463,9 +463,28 @@ PrefabInstance:
       propertyPath: m_StoppingDistance
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 5363471097713978706, guid: 555c497645c1f884f814e9c44b365b11, type: 3}
+      propertyPath: timeBetweenAttacks
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6399205945137296786, guid: 555c497645c1f884f814e9c44b365b11, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 6399205945137296787, guid: 555c497645c1f884f814e9c44b365b11, type: 3}
+      propertyPath: m_Avatar
+      value: 
+      objectReference: {fileID: 9000000, guid: 8f0565f23a2b58541a475bd3c1393052, type: 3}
+    - target: {fileID: 6399205945137296787, guid: 555c497645c1f884f814e9c44b365b11, type: 3}
+      propertyPath: m_WarningMessage
+      value: "\nBinding warning: Some generic clip(s) animate transforms that are
+        already bound by a Humanoid avatar. These transforms can only be changed
+        by Humanoid clips.\n\tTransform 'Character1_Hips'\n\tTransform 'Character1_RightFoot'\n\tTransform
+        'Character1_LeftHandThumb3'\n\tTransform 'Character1_LeftFoot'\n\tTransform
+        'Character1_RightHandThumb1'\n\tTransform 'Character1_LeftHandIndex1'\n\tTransform
+        'Character1_LeftHandRing3'\n\tTransform 'Character1_RightHandRing2'\n\tTransform
+        'Character1_RightHandPinky3'\n\tTransform 'Character1_RightHandRing1'\n\tand
+        more ...\n\tFrom animation clip 'Hikick'"
       objectReference: {fileID: 0}
     - target: {fileID: 6399205945137296814, guid: 555c497645c1f884f814e9c44b365b11, type: 3}
       propertyPath: m_RootOrder
