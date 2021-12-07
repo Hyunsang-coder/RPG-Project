@@ -9,9 +9,10 @@ namespace RPG.Control
         // PlayerController는 결국 mouse control에 대한 클래스 (마우스 클릭 + Raycast)  
         void Update()
         {
-            if (InteractWithCombat()) return;
-            if (InteractWithMovement()) return;
-            print("Nowhere to move");
+            
+            if (InteractWithCombat()) return;  // InteractWithCombat이 true이면 Update 함수에서 빠져나옴
+            if (InteractWithMovement()) return; // InteractWithCombat이 false여야 InteractWithMovement 실행 
+            print("Nowhere to move"); // 위의 두 함수가 false여야 print!
         }
 
         bool InteractWithCombat()
@@ -20,14 +21,15 @@ namespace RPG.Control
             foreach (RaycastHit hit in hits)
             {
                 CombatTarget target = hit.transform.GetComponent<CombatTarget>();
+                if (target == null) continue;
 
-                if (!GetComponent<Fighter>().CanAttack(target))
+                if (!GetComponent<Fighter>().CanAttack(target.gameObject))
                 {
                     continue;
                 }
                 if (Input.GetMouseButtonDown(0))
                 {
-                    GetComponent<Fighter>().Attack(target);
+                    GetComponent<Fighter>().Attack(target.gameObject);
                 }
                 return true;
             }
