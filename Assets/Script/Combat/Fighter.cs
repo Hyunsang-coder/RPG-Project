@@ -64,6 +64,8 @@ namespace RPG.Combat
 
         public bool CanAttack(GameObject combatTarget) 
         {
+            // null 과 체력 0, 즉 사망 상태 확인 
+
             if (combatTarget == null) { return false; }
             Health targetToTest = combatTarget.GetComponent<Health>();
             return targetToTest != null && !targetToTest.IsDead();
