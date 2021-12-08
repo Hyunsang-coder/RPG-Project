@@ -15,6 +15,11 @@ namespace RPG.Core
 
             currentAction = action;
         }
+
+        public void CancelCurrentAction()
+        {
+            StartAction(null); // currentAction을 shut down 해버림
+        }
     }
 
 }
