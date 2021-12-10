@@ -25,7 +25,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4774818462797342078, guid: f154abb957b7152449c4edef54af878e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.147
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4774818462797342078, guid: f154abb957b7152449c4edef54af878e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -58,6 +58,10 @@ PrefabInstance:
     - target: {fileID: 4774818462797342078, guid: f154abb957b7152449c4edef54af878e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8659975168966144675, guid: f154abb957b7152449c4edef54af878e, type: 3}
+      propertyPath: health
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f154abb957b7152449c4edef54af878e, type: 3}
@@ -109,7 +113,7 @@ NavMeshAgent:
   m_Acceleration: 50
   avoidancePriority: 50
   m_AngularSpeed: 5000
-  m_StoppingDistance: 0
+  m_StoppingDistance: 0.5
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
@@ -130,7 +134,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponRange: 1.3
-  timeBetweenAttacks: 1
+  timeBetweenAttacks: 1.2
   punchDamage: 5
 --- !u!114 &7716371879117415120
 MonoBehaviour:
@@ -169,7 +173,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400096, guid: 412b92d4feeb9c548bfa98f62c4d1022, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.14
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 400096, guid: 412b92d4feeb9c548bfa98f62c4d1022, type: 3}
       propertyPath: m_LocalPosition.z
