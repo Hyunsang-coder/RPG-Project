@@ -9,7 +9,7 @@ namespace RPG.Core
         [SerializeField] Transform target;
         [Range(0.1f, 5f)]
         [SerializeField] float zoomSensitivity = 1;
-        Vector3 camOffset = new Vector3(0, 0, 0);
+        //Vector3 camOffset = new Vector3(0, 0, 0);
         void Start()
         {
 
