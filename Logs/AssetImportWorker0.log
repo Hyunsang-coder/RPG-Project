@@ -1,0 +1,386 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.23f1 (c5d91304a876) revision 12966163'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home; OS build 19043.1348; Version 2009; 64bit' Language: 'ko' Physical Memory: 32694 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+D:\Unity\2020.3.23f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+D:/UnityGitLocal/RPG Project
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+60751
+Successfully changed project path to: D:/UnityGitLocal/RPG Project
+D:/UnityGitLocal/RPG Project
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 35.31 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.23f1 (c5d91304a876)
+[Subsystems] Discovering subsystems at path D:/Unity/2020.3.23f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/UnityGitLocal/RPG Project/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: AMD Radeon RX 6700 XT (ID=0x73df)
+    Vendor:   
+    VRAM:     11986 MB
+    Driver:   30.0.13025.5005
+Initialize mono
+Mono path[0] = 'D:/Unity/2020.3.23f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Unity/2020.3.23f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'D:/Unity/2020.3.23f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56092
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/Unity/2020.3.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.000790 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 34.54 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.375 seconds
+Domain Reload Profiling:
+	ReloadAssembly (375ms)
+		BeginReloadAssembly (44ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (0ms)
+		EndReloadAssembly (287ms)
+			LoadAssemblies (44ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (86ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (18ms)
+			SetupLoadedEditorAssemblies (119ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (35ms)
+				BeforeProcessingInitializeOnLoad (12ms)
+				ProcessInitializeOnLoadAttributes (51ms)
+				ProcessInitializeOnLoadMethodAttributes (18ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.003449 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.60 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.724 seconds
+Domain Reload Profiling:
+	ReloadAssembly (725ms)
+		BeginReloadAssembly (99ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (14ms)
+		EndReloadAssembly (590ms)
+			LoadAssemblies (70ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (177ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (37ms)
+			SetupLoadedEditorAssemblies (264ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (51ms)
+				ProcessInitializeOnLoadAttributes (133ms)
+				ProcessInitializeOnLoadMethodAttributes (74ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.86 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2214 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 125.6 MB.
+System memory in use after: 125.8 MB.
+
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 2940.
+Total: 2.569300 ms (FindLiveObjects: 0.227400 ms CreateObjectMapping: 0.066000 ms MarkObjects: 2.198600 ms  DeleteObjects: 0.076700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Asset Packs/Fantasy Skybox FREE/Materials/FS003
+  artifactKey: Guid(19ee5fc36da208d45b86eb47e0f34cbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Fantasy Skybox FREE/Materials/FS003 using Guid(19ee5fc36da208d45b86eb47e0f34cbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c22b4f9e4cdfe3824d33d4ac878dc642') in 0.013658 seconds 
+  Import took 0.016184 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.061773 seconds.
+  path: Assets/Asset Packs/ExplosiveLLC/Demo Elements
+  artifactKey: Guid(765f387bbd2ed4044b98873ccfb1ae3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/ExplosiveLLC/Demo Elements using Guid(765f387bbd2ed4044b98873ccfb1ae3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c1b12b6f71925cd9b86cc2fdd46f2e1') in 0.012984 seconds 
+  Import took 0.016132 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.619540 seconds.
+  path: Assets/Asset Packs/ExplosiveLLC/Demo Elements/Models
+  artifactKey: Guid(19b8b0169b82b9044b2e6214a7a3ba0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/ExplosiveLLC/Demo Elements/Models using Guid(19b8b0169b82b9044b2e6214a7a3ba0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4c3296b95840516fb95164f4a45a4d6') in 0.005745 seconds 
+  Import took 0.008814 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.203768 seconds.
+  path: Assets/Asset Packs/ExplosiveLLC/Demo Elements/Models/Target.FBX
+  artifactKey: Guid(c82005efa6bc65e4c838bdcfb57759d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/ExplosiveLLC/Demo Elements/Models/Target.FBX using Guid(c82005efa6bc65e4c838bdcfb57759d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3afd50590e0db39cc202c0b5dc5a2d04') in 0.129713 seconds 
+  Import took 0.133040 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.430490 seconds.
+  path: Assets/Asset Packs/ExplosiveLLC/RPG Character Mecanim Animation Pack FREE/Models/Weapons
+  artifactKey: Guid(7f9ae55364605754a80e9dda23305250) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/ExplosiveLLC/RPG Character Mecanim Animation Pack FREE/Models/Weapons using Guid(7f9ae55364605754a80e9dda23305250) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d3b8d5580105852795911bda07a6023') in 0.004571 seconds 
+  Import took 0.007764 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.594833 seconds.
+  path: Assets/Asset Packs/ExplosiveLLC/SuperCharacterController/Player.prefab
+  artifactKey: Guid(0241e293f88c9ba4683c927a85520fed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/ExplosiveLLC/SuperCharacterController/Player.prefab using Guid(0241e293f88c9ba4683c927a85520fed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9904345399a6b3df441c7bdc90b35fa') in 0.019214 seconds 
+  Import took 0.022313 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.431420 seconds.
+  path: Assets/Asset Packs/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Editor
+  artifactKey: Guid(621c5ad4014423646b0c9e248b854cd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Editor using Guid(621c5ad4014423646b0c9e248b854cd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cc691334d7dfb7c015741321742145f') in 0.004984 seconds 
+  Import took 0.008113 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.162747 seconds.
+  path: Assets/Asset Packs/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Samples/Pinwheel Studio/Prefabs/AutumnTree2.prefab
+  artifactKey: Guid(991dab34aeadc1f499582a575f38896c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Samples/Pinwheel Studio/Prefabs/AutumnTree2.prefab using Guid(991dab34aeadc1f499582a575f38896c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'feea32b2519a0699fbe11fb63cf3134e') in 0.017667 seconds 
+  Import took 0.020792 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000150 seconds.
+  path: Assets/Asset Packs/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Samples/Pinwheel Studio/Prefabs/Grass.prefab
+  artifactKey: Guid(ff85d5480822770438d58a2038b08150) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Samples/Pinwheel Studio/Prefabs/Grass.prefab using Guid(ff85d5480822770438d58a2038b08150) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7e86310f3183d32162b76247a2c06e5') in 0.010993 seconds 
+  Import took 0.013275 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000135 seconds.
+  path: Assets/Asset Packs/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Samples/Pinwheel Studio/Prefabs/Pine_02.prefab
+  artifactKey: Guid(f4cfc7d864800a742972be4fded81065) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Samples/Pinwheel Studio/Prefabs/Pine_02.prefab using Guid(f4cfc7d864800a742972be4fded81065) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98725fffe8de81cbc1e9f67e5bcdda58') in 0.009209 seconds 
+  Import took 0.011670 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000135 seconds.
+  path: Assets/Asset Packs/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Samples/Pinwheel Studio/Prefabs/OldTree.prefab
+  artifactKey: Guid(6e3c35af30a28104ab1ec170195dc650) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Samples/Pinwheel Studio/Prefabs/OldTree.prefab using Guid(6e3c35af30a28104ab1ec170195dc650) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35388d0e72b973f0e6ae9fab4c734597') in 0.013437 seconds 
+  Import took 0.016310 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000165 seconds.
+  path: Assets/Asset Packs/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Samples/Pinwheel Studio/Prefabs/WinterBranch.prefab
+  artifactKey: Guid(74996c3da7ad92f428bb0e1f1f2da3df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Samples/Pinwheel Studio/Prefabs/WinterBranch.prefab using Guid(74996c3da7ad92f428bb0e1f1f2da3df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb2afad220242b6a41cc3ab22659db91') in 0.015189 seconds 
+  Import took 0.018308 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000184 seconds.
+  path: Assets/Asset Packs/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Samples/Pinwheel Studio/Prefabs/Pine_01_Bevel.prefab
+  artifactKey: Guid(9fcb75428ae3e924e8dc0e7eb27415c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Samples/Pinwheel Studio/Prefabs/Pine_01_Bevel.prefab using Guid(9fcb75428ae3e924e8dc0e7eb27415c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82a542938fd4c6c4febfc51364ab3a10') in 0.011641 seconds 
+  Import took 0.014786 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000140 seconds.
+  path: Assets/Asset Packs/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Samples/Pinwheel Studio/Prefabs/GodRay.prefab
+  artifactKey: Guid(8aa3174ecec0a6b47ae7e9a7fe06f455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Samples/Pinwheel Studio/Prefabs/GodRay.prefab using Guid(8aa3174ecec0a6b47ae7e9a7fe06f455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4731a4f4ba4a7b8fd0aa8531d62b9e36') in 0.011642 seconds 
+  Import took 0.014382 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000165 seconds.
+  path: Assets/Asset Packs/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Samples/Pinwheel Studio/Prefabs/Pine_02_Bevel.prefab
+  artifactKey: Guid(6f7fff8f01477a740a2b3c2120bd6bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Samples/Pinwheel Studio/Prefabs/Pine_02_Bevel.prefab using Guid(6f7fff8f01477a740a2b3c2120bd6bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e46c6db30a1e39fb651e46e2c34a9e5') in 0.010148 seconds 
+  Import took 0.012929 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000146 seconds.
+  path: Assets/Asset Packs/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Samples/Pinwheel Studio/Prefabs/Snowman.prefab
+  artifactKey: Guid(95cedf161cefbcf48ba21cabd6bb918b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Samples/Pinwheel Studio/Prefabs/Snowman.prefab using Guid(95cedf161cefbcf48ba21cabd6bb918b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1bb8330dcf65621e1a7f868dc044f6b') in 0.022698 seconds 
+  Import took 0.025915 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000205 seconds.
+  path: Assets/Asset Packs/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Samples/Pinwheel Studio/Prefabs/Smoke_Small.prefab
+  artifactKey: Guid(a341a6ed49ac08b4a9b4b7f21bc0dfdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Samples/Pinwheel Studio/Prefabs/Smoke_Small.prefab using Guid(a341a6ed49ac08b4a9b4b7f21bc0dfdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '115989ec32ca31a8e85633d803fc7942') in 0.010251 seconds 
+  Import took 0.013133 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000153 seconds.
+  path: Assets/Asset Packs/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Samples/Pinwheel Studio/Prefabs/Pinetree.prefab
+  artifactKey: Guid(4c32851254257ed4a9191912835abbbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Samples/Pinwheel Studio/Prefabs/Pinetree.prefab using Guid(4c32851254257ed4a9191912835abbbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7f2da6d83dffcddafaeb7dfcdbf81ce') in 0.011764 seconds 
+  Import took 0.014924 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000168 seconds.
+  path: Assets/Asset Packs/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Samples/Pinwheel Studio/Prefabs/AutumnTree3.prefab
+  artifactKey: Guid(f2f4f08f7dc60d042ac98c593f8e32c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Samples/Pinwheel Studio/Prefabs/AutumnTree3.prefab using Guid(f2f4f08f7dc60d042ac98c593f8e32c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4dc32b727fbdd8fef94733670ff0aef4') in 0.011577 seconds 
+  Import took 0.014397 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000152 seconds.
+  path: Assets/Asset Packs/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Samples/Pinwheel Studio/Prefabs/Cactus.prefab
+  artifactKey: Guid(e19eaf6ede43e7443b0f88e7872a6159) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Samples/Pinwheel Studio/Prefabs/Cactus.prefab using Guid(e19eaf6ede43e7443b0f88e7872a6159) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '531a6a5a9a4c6c3a41e4e0aa2abe45c8') in 0.014800 seconds 
+  Import took 0.017789 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000156 seconds.
+  path: Assets/Asset Packs/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Samples/Pinwheel Studio/Prefabs/Pine_00_Bevel.prefab
+  artifactKey: Guid(e8411cd468b48db46a29291eeb27a3df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Samples/Pinwheel Studio/Prefabs/Pine_00_Bevel.prefab using Guid(e8411cd468b48db46a29291eeb27a3df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bebd7c2cd902154ebf3b4b3b703690b') in 0.011038 seconds 
+  Import took 0.013970 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000148 seconds.
+  path: Assets/Asset Packs/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Samples/Pinwheel Studio/Prefabs/Fire_Small.prefab
+  artifactKey: Guid(3f7414145435c184e8a4cb8369212abf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Samples/Pinwheel Studio/Prefabs/Fire_Small.prefab using Guid(3f7414145435c184e8a4cb8369212abf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de09efd4ccc05b4ac1a8c763fd3cd4ab') in 0.009081 seconds 
+  Import took 0.012023 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000151 seconds.
+  path: Assets/Asset Packs/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Samples/Pinwheel Studio/Prefabs/Skeleton.prefab
+  artifactKey: Guid(07f7697f653699d4fa9f38273c28deb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Samples/Pinwheel Studio/Prefabs/Skeleton.prefab using Guid(07f7697f653699d4fa9f38273c28deb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e4b5fb694c81b0c608cbbce580c1c3e') in 0.012566 seconds 
+  Import took 0.015307 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000153 seconds.
+  path: Assets/Asset Packs/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Samples/Pinwheel Studio/Prefabs/PainterCursor.prefab
+  artifactKey: Guid(c37ebee2e1481ae43b54dbef7c863042) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Samples/Pinwheel Studio/Prefabs/PainterCursor.prefab using Guid(c37ebee2e1481ae43b54dbef7c863042) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72c41502b2049ecf27502e5198bc7fad') in 0.008246 seconds 
+  Import took 0.011134 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000167 seconds.
+  path: Assets/Asset Packs/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Samples/Pinwheel Studio/Prefabs/WinterPintree.prefab
+  artifactKey: Guid(4d30d389aebb4ca4baec23b678f82099) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Samples/Pinwheel Studio/Prefabs/WinterPintree.prefab using Guid(4d30d389aebb4ca4baec23b678f82099) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2920667c7626c1ccaa01e32d0b3af42a') in 0.010965 seconds 
+  Import took 0.013702 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003789 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.61 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.694 seconds
+Domain Reload Profiling:
+	ReloadAssembly (695ms)
+		BeginReloadAssembly (100ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (30ms)
+		EndReloadAssembly (559ms)
+			LoadAssemblies (69ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (174ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (31ms)
+			SetupLoadedEditorAssemblies (243ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (45ms)
+				ProcessInitializeOnLoadAttributes (120ms)
+				ProcessInitializeOnLoadMethodAttributes (69ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.89 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2110 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 119.0 MB.
+System memory in use after: 119.3 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2988.
+Total: 2.779200 ms (FindLiveObjects: 0.261100 ms CreateObjectMapping: 0.093800 ms MarkObjects: 2.407100 ms  DeleteObjects: 0.016500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 

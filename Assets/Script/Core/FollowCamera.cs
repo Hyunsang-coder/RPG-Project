@@ -18,6 +18,7 @@ namespace RPG.Core
         // Update is called once per frame
         void LateUpdate()
         {
+            //transform.position = target.position;
             transform.position = Vector3.Lerp(transform.position, target.position, 0.1f);
             ScrollToZoom();
         }
