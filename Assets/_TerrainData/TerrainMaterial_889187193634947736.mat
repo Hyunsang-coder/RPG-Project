@@ -24,15 +24,15 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ColorBlend:
-        m_Texture: {fileID: -1896164562799801774, guid: 8a0981026a8d31a448ed3b878a853638, type: 2}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ColorByHeight:
-        m_Texture: {fileID: 5496334049826470910, guid: 8a0981026a8d31a448ed3b878a853638, type: 2}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ColorByNormal:
-        m_Texture: {fileID: 3515471138548030558, guid: 8a0981026a8d31a448ed3b878a853638, type: 2}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -93,7 +93,7 @@ Material:
     - __dirty: 0
     m_Colors:
     - _Color: {r: 0.87058824, g: 0.87058824, b: 0.87058824, a: 1}
-    - _Dimension: {r: 100, g: 1, b: 100, a: 0}
+    - _Dimension: {r: 100, g: 20, b: 100, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []

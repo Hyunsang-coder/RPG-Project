@@ -221,6 +221,7 @@ MonoBehaviour:
   patrolPath: {fileID: 0}
   waypointTolerance: 1.1
   waypointDewellTime: 2.5
+  patrolSpeedFraction: 0.317
 --- !u!114 &5363471097713978706
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -248,3 +249,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43cca3856c3d7684fa2e4ffdf0534056, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxSpeed: 4.5

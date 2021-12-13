@@ -93,10 +93,10 @@ MonoBehaviour:
     showTerrainMask: 0
   wizardTools:
     lightingModel: 0
-    texturingModel: 0
-    splatsModel: 0
+    texturingModel: 2
+    splatsModel: 2
     origin: {x: -50, y: 0, z: -50}
-    tileSize: {x: 100, y: 50, z: 100}
+    tileSize: {x: 100, y: 20, z: 100}
     tileCountX: 1
     tileCountZ: 1
     groupId: 0

@@ -16,6 +16,8 @@ namespace RPG.Control
         [SerializeField] PatrolPath patrolPath;
         [SerializeField] float waypointTolerance = 1;
         [SerializeField] float waypointDewellTime = 3f;
+        [Range(0, 1)]
+        [SerializeField] float patrolSpeedFraction = 0.2f; // this x maxspeed = patrolspeed
         Fighter fighter;
         GameObject player;
         Health health;
@@ -78,7 +80,7 @@ namespace RPG.Control
             
             if (timeSinceLastSawPlayer > waypointDewellTime)
             {
-                mover.StartMoveAction(nextPosition);
+                mover.StartMoveAction(nextPosition, patrolSpeedFraction);
             }
             
         }
@@ -118,7 +120,7 @@ namespace RPG.Control
 
         private void OnDrawGizmosSelected()  //OnDrawGizmos() ¿Í À¯»ç 
         {
-            Gizmos.color = Color.red;
+            Gizmos.color = Color.green;
             Gizmos.DrawWireSphere(transform.position, chaseDistance);
         }
     }
