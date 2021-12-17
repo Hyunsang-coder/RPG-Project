@@ -11,6 +11,7 @@ namespace RPG.Movement
         Animator anim;
         NavMeshAgent navMeshAgent;
         Health health;
+
         void Start()
         {
             anim = GetComponent<Animator>();
@@ -20,8 +21,9 @@ namespace RPG.Movement
 
         void Update()
         {
-            navMeshAgent.enabled = !(health.IsDead());
             UpdateAnimator();
+            navMeshAgent.enabled = !(health.IsDead());
+            
         }
 
         public void StartMoveAction(Vector3 destination, float speedFraction)

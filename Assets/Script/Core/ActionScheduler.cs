@@ -5,7 +5,7 @@ namespace RPG.Core
     public class ActionScheduler : MonoBehaviour
     {
         IAction currentAction;
-        public void StartAction(IAction action)
+        public void StartAction(IAction action)  // 
         {
             if (currentAction == action) return;
             if (currentAction != null)
@@ -18,7 +18,7 @@ namespace RPG.Core
 
         public void CancelCurrentAction()
         {
-            StartAction(null); // currentAction을 shut down 해버림
+            StartAction(null); // 기존 액션은 cancel하고 새로운 액션은 null이 되버림
         }
     }
 
