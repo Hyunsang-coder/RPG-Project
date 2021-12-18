@@ -15,6 +15,9 @@ namespace RPG.SceneManagement
         [SerializeField] int sceneToLoad = -1;
         [SerializeField] Transform spawnPoint;
         [SerializeField] DestinationIdentifier destination;
+        [SerializeField] float fadeOutTime = 1f;
+        [SerializeField] float fadeInTime = 1f;
+        [SerializeField] float fadeWaitTime = 0.5f;
         private void Start()
         {
             
@@ -36,11 +39,19 @@ namespace RPG.SceneManagement
                 Debug.LogError("Scene to Load not set");
                 yield break;
             }
-            DontDestroyOnLoad(gameObject);                          //Coroutine 사용 안 하면 scene 불러 오기도 전에 print랑 destroy 실행 
+
+            DontDestroyOnLoad(gameObject);    //Coroutine 사용 안 하면 scene 불러 오기도 전에 print랑 destroy 실행 
+
+            Fader fader = FindObjectOfType<Fader>();
+
+            yield return fader.FadeIn(fadeInTime);
             yield return SceneManager.LoadSceneAsync(sceneToLoad); //LoadScene은 return type이 void라서 아예 작동 안함. Async는 완료 시간 return 
 
             Portal otherPortal = GetOtherPortal(); // GetOtherPortal이 null이되면 단순 신만 로딩되고, 캐릭터 위치는 위치 업데이트 X
             UpdatePlayer(otherPortal);
+
+            yield return new WaitForSeconds(fadeWaitTime);
+            yield return fader.FadeOut(fadeOutTime);
 
             Destroy(gameObject);
         }
@@ -50,7 +61,7 @@ namespace RPG.SceneManagement
             foreach (Portal portal in FindObjectsOfType<Portal>())
             {
                 if (portal == this) continue;
-                if (portal.destination != destination) continue;      //destination 같은 포탈로 이동 
+                if (portal.destination != destination) continue;      //다른 신에서 destination이 동일한 포탈로 이동 
 
                 return portal;
             }
