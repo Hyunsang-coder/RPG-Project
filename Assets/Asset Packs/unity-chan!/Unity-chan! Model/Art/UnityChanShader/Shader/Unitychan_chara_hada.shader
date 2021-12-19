@@ -26,7 +26,6 @@ Shader "UnityChan/Skin"
 			ZTest LEqual
 CGPROGRAM
 #pragma multi_compile_fwdbase
-#pragma target 3.0
 #pragma vertex vert
 #pragma fragment frag
 #include "UnityCG.cginc"
@@ -40,7 +39,6 @@ ENDCG
 			Cull Front
 			ZTest Less
 CGPROGRAM
-#pragma target 3.0
 #pragma vertex vert
 #pragma fragment frag
 #include "UnityCG.cginc"

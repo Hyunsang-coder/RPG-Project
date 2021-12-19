@@ -6,12 +6,19 @@ namespace RPG.Combat
 {
     public class Fighter : MonoBehaviour, IAction
     {
-        [SerializeField] float weaponRange = 2f;
         [SerializeField] float timeBetweenAttacks = 1f;
-        [SerializeField] float punchDamage = 5f;
+        [SerializeField] Transform handTransform = null;
+        [SerializeField] Weapon weapon = null;
+
         Health target;
         float timeSinceLastAttack = Mathf.Infinity;  // 시작과 동시에 바로 공격할 수 있도록!
 
+        void Start()
+        {
+            SpawnWeapon();
+        }
+
+       
 
         void Update()
         {
@@ -30,6 +37,12 @@ namespace RPG.Combat
             }
         }
 
+        private void SpawnWeapon()
+        {
+            if (weapon == null) return;
+            Animator animator = GetComponent<Animator>();
+            weapon.Spawn(handTransform, animator);
+        }
 
         private void AttackBehavior()
         {
@@ -54,12 +67,12 @@ namespace RPG.Combat
         void Hit()
         {
             if (target == null) return;
-            target.TakeDamage(punchDamage);
+            target.TakeDamage(weapon.GetDamage());
         }
 
         private bool GetIsInRange()
         {
-            return Vector3.Distance(transform.position, target.transform.position) < weaponRange;
+            return Vector3.Distance(transform.position, target.transform.position) < weapon.GetRange();
         }
 
         public bool CanAttack(GameObject combatTarget) 
