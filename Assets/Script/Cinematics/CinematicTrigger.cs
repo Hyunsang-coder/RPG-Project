@@ -12,7 +12,7 @@ namespace RPG.Cinematics
             SkipCinematic();
         }
 
-        bool introCinematicPlayed = false;
+        static bool introCinematicPlayed = false;
         private void OnTriggerEnter(Collider other)
         {
             if (other.tag == "Player" && !introCinematicPlayed)
