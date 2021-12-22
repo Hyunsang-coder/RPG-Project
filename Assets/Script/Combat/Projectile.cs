@@ -1,3 +1,4 @@
+using RPG.Core;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -9,8 +10,9 @@ namespace RPG.Combat
     {
         [Range(0, 1)]
         [SerializeField] float heightRatio = 0.7f; //0.9 이상 headshot
-        [SerializeField] Transform target = null;
         [SerializeField] float projectileSpeed =1;
+
+        Health target = null;
         private void Update()
         {
             if (target == null) return;
@@ -19,12 +21,17 @@ namespace RPG.Combat
 
         }
 
+        public void SetTarget(Health target)
+        {
+            this.target = target;
+        }
+
         private Vector3 GetAimLocation()         //캡슐콜라이더 기준 상단 80% 위치로 화살이 꽂히도록...
         {
             CapsuleCollider targetCapsule = target.GetComponent<CapsuleCollider>();
-            if (targetCapsule == null) return target.position;
+            if (targetCapsule == null) return target.transform.position;
 
-            Vector3 targetPosition = new Vector3(target.position.x, targetCapsule.height * heightRatio, target.position.z);
+            Vector3 targetPosition = new Vector3(target.transform.position.x, targetCapsule.height * heightRatio, target.transform.position.z);
             return targetPosition;
         }
     }
