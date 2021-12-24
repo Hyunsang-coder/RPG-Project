@@ -11,6 +11,7 @@ namespace RPG.Combat
         [Range(0, 1)]
         [SerializeField] float heightRatio = 0.7f; //0.9 이상 headshot
         [SerializeField] float projectileSpeed =1;
+        float damage = 0;
 
         Health target = null;
         private void Update()
@@ -21,9 +22,12 @@ namespace RPG.Combat
 
         }
 
-        public void SetTarget(Health target)
+       
+
+        public void SetTarget(Health target, float damage)
         {
             this.target = target;
+            this.damage = damage;
         }
 
         private Vector3 GetAimLocation()         //캡슐콜라이더 기준 상단 80% 위치로 화살이 꽂히도록...
@@ -33,6 +37,13 @@ namespace RPG.Combat
 
             Vector3 targetPosition = new Vector3(target.transform.position.x, targetCapsule.height * heightRatio, target.transform.position.z);
             return targetPosition;
+        }
+
+        private void OnTriggerEnter(Collider other)
+        {
+            if(other.GetComponent<Health>() != target) return;
+            target.TakeDamage(damage);
+            Destroy(gameObject);
         }
     }
 
