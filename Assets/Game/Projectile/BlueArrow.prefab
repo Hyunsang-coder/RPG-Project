@@ -193,6 +193,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: BlueArrow
       objectReference: {fileID: 0}
+    - target: {fileID: 9205942393596674619, guid: 3a0ca05102ad57642a70e898ddacafb5, type: 3}
+      propertyPath: isHoming
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9205942393596674619, guid: 3a0ca05102ad57642a70e898ddacafb5, type: 3}
+      propertyPath: projectileSpeed
+      value: 20
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a0ca05102ad57642a70e898ddacafb5, type: 3}
 --- !u!4 &8231469963510703305 stripped

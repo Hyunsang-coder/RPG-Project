@@ -11,13 +11,25 @@ namespace RPG.Combat
         [Range(0, 1)]
         [SerializeField] float heightRatio = 0.7f; //0.9 ÀÌ»ף headshot
         [SerializeField] float projectileSpeed =1;
+        [SerializeField] bool isHoming = true;
+        [SerializeField] GameObject hitEffect = null;
         float damage = 0;
 
         Health target = null;
+
+        private void Start()
+        {
+            transform.LookAt(GetAimLocation());
+        }
+
         private void Update()
         {
             if (target == null) return;
-            transform.LookAt(GetAimLocation());
+
+            if (isHoming && !target.IsDead())
+            {
+                transform.LookAt(GetAimLocation());
+            }
             transform.Translate(Vector3.forward * Time.deltaTime*projectileSpeed);
 
         }
@@ -37,14 +49,21 @@ namespace RPG.Combat
 
             Vector3 targetPosition = new Vector3(target.transform.position.x, targetCapsule.height * heightRatio, target.transform.position.z);
             return targetPosition;
+
         }
 
         private void OnTriggerEnter(Collider other)
         {
             if(other.GetComponent<Health>() != target) return;
+            if (target.IsDead()) return;
             target.TakeDamage(damage);
+            if (hitEffect != null)
+            {
+                Instantiate(hitEffect, GetAimLocation(), transform.rotation);
+            }
             Destroy(gameObject);
         }
+
     }
 
 }
