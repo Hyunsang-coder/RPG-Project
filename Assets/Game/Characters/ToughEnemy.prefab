@@ -20,6 +20,7 @@ GameObject:
   - component: {fileID: -5757009807590140003}
   - component: {fileID: 7517322539279805475}
   - component: {fileID: 6944462450639804699}
+  - component: {fileID: 8710764033578137466}
   m_Layer: 0
   m_Name: ToughEnemy
   m_TagString: Untagged
@@ -178,7 +179,7 @@ MonoBehaviour:
   timeBetweenAttacks: 1.2
   rightHandTransform: {fileID: 1435271597305080558}
   leftHandTransform: {fileID: 1435271597305006726}
-  defaultWeapon: {fileID: 11400000, guid: f844bcbe760876a41a4d1c8b5ae027b6, type: 2}
+  defaultWeaponName: Unarmed
 --- !u!114 &5145845040369777592
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -238,6 +239,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &8710764033578137466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5145845040369777594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ea9374b509b70f4bba37e4a2ca8cf00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uniqueIdentifier: 
 --- !u!1001 &1435271597305144170
 PrefabInstance:
   m_ObjectHideFlags: 0
