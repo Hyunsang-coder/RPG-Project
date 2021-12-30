@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Playables;
+using RPG.Saving;
 
 namespace RPG.Cinematics
 {
-    public class CinematicTrigger : MonoBehaviour
+    public class CinematicTrigger : MonoBehaviour, ISaveable
     {
         private void Update()
         {
@@ -30,7 +31,18 @@ namespace RPG.Cinematics
                 GetComponent<PlayableDirector>().Stop();
                 introCinematicPlayed = true;
             }
-            
+
+        }
+
+        public object CaptureState() 
+        {
+            return introCinematicPlayed;
+        }
+
+        public void RestoreState(object state) 
+        {
+            bool CinematicPlayed = (bool)state;
+            introCinematicPlayed = CinematicPlayed;
         }
 
     }

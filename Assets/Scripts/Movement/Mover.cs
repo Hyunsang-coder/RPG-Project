@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.AI;
 using RPG.Core;
 using RPG.Saving;
+using System.Collections.Generic;
 
 namespace RPG.Movement
 {
@@ -54,14 +55,20 @@ namespace RPG.Movement
 
         public object CaptureState()
         {
-            return new SerializableVector3(transform.position);
+            Dictionary<string, object> data = new Dictionary<string, object>();
+            data["position"] = new SerializableVector3(transform.transform.position);
+            data["rotation"] = new SerializableVector3(transform.eulerAngles);
+            return data;
         }
 
         public void RestoreState(object state)
         {
-            SerializableVector3 position = (SerializableVector3)state; // as SerializableVector3와 비슷함. type이 일치하지 안흔 경우 as는 null을, ()는 exception을 던짐
+            Dictionary<string, object> data = (Dictionary<string, object>)state;
             GetComponent<NavMeshAgent>().enabled = false;
-            transform.position = position.ToVector();
+
+            transform.position = ((SerializableVector3)data["position"]).ToVector();
+            transform.eulerAngles = ((SerializableVector3)data["rotation"]).ToVector();
+            
             GetComponent<NavMeshAgent>().enabled = true;
         }
     }

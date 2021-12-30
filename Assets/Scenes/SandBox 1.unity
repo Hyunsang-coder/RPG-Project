@@ -1903,6 +1903,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2910426504349877587, guid: fca920f969d8fdb4792adf091193cc17, type: 3}
+      propertyPath: respawnTime
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 3112916892234711193, guid: fca920f969d8fdb4792adf091193cc17, type: 3}
       propertyPath: m_Name
       value: BowPickup
@@ -2633,6 +2637,7 @@ GameObject:
   - component: {fileID: 654891625}
   - component: {fileID: 654891624}
   - component: {fileID: 654891627}
+  - component: {fileID: 654891628}
   m_Layer: 2
   m_Name: Intro Sequence
   m_TagString: Untagged
@@ -2736,6 +2741,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3120a2d9df223943aeab0f0f0c0edbd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &654891628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 654891621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ea9374b509b70f4bba37e4a2ca8cf00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uniqueIdentifier: 4010181e-5af6-4726-931d-14e831701f31
 --- !u!4 &655871493 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4843350896899200, guid: ee22fd94a14e96e4ebb960ddb85ea585, type: 3}
@@ -3729,6 +3747,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 363557436}
     m_Modifications:
+    - target: {fileID: 4737031968634868421, guid: 07f5cd6c98f0f7c47bae9dbfb65d6a4a, type: 3}
+      propertyPath: respawnTime
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4822780627645896463, guid: 07f5cd6c98f0f7c47bae9dbfb65d6a4a, type: 3}
       propertyPath: m_Name
       value: FireBall
@@ -5188,6 +5210,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SwordPickup 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4796850740207739882, guid: 16292874b96d6b3459e20be4e9a046b1, type: 3}
+      propertyPath: respawnTime
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 8703230377237930029, guid: 16292874b96d6b3459e20be4e9a046b1, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -6140,7 +6166,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1277190365}
   m_LocalRotation: {x: 0.31375048, y: 0.26440114, z: -0.08703448, w: 0.90778726}
-  m_LocalPosition: {x: 12.898287, y: 16.856836, z: -59.11272}
+  m_LocalPosition: {x: 15.760742, y: 14.304614, z: -55.77893}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1394344734}
@@ -6971,23 +6997,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ad980451443d70438faac0bc6c235a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_TrackedObjectOffset: {x: -0.1077657, y: 0.2344967, z: 0.1220705}
+  m_TrackedObjectOffset: {x: 0, y: 0, z: 0}
   m_LookaheadTime: 0.354
-  m_LookaheadSmoothing: 1
+  m_LookaheadSmoothing: 0
   m_LookaheadIgnoreY: 0
-  m_XDamping: 1
-  m_YDamping: 1
-  m_ZDamping: 1
+  m_XDamping: 1.2
+  m_YDamping: 1.13
+  m_ZDamping: 1.55
   m_TargetMovementOnly: 1
-  m_ScreenX: 0.5255204
-  m_ScreenY: 0.414
-  m_CameraDistance: 14.9
+  m_ScreenX: 0.5
+  m_ScreenY: 0.5
+  m_CameraDistance: 10
   m_DeadZoneWidth: 0
   m_DeadZoneHeight: 0
   m_DeadZoneDepth: 0
   m_UnlimitedSoftZone: 0
   m_SoftZoneWidth: 0
-  m_SoftZoneHeight: 0.2064785
+  m_SoftZoneHeight: 0.2020621
   m_BiasX: 0
   m_BiasY: 0
   m_CenterOnActivate: 1
@@ -9367,7 +9393,7 @@ MonoBehaviour:
   m_LookAt: {fileID: 0}
   m_Follow: {fileID: 5145845039099086764}
   m_Lens:
-    FieldOfView: 38
+    FieldOfView: 60
     OrthographicSize: 5
     NearClipPlane: 0.3
     FarClipPlane: 1000
@@ -9586,7 +9612,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2125260113}
   m_LocalRotation: {x: 0.31375048, y: 0.26440114, z: -0.08703448, w: 0.90778726}
-  m_LocalPosition: {x: 12.898287, y: 16.856836, z: -59.11272}
+  m_LocalPosition: {x: 15.760742, y: 14.304614, z: -55.77893}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1137234866}
@@ -9625,7 +9651,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 38
+  field of view: 60
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -10206,8 +10232,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4098507768528981799, guid: ca4a5fbe46ff0364ba8e89f1a50c45ed, type: 3}
+      propertyPath: defaultWeapon
+      value: 
+      objectReference: {fileID: 11400000, guid: f17b213a608c2a846908c9718fda0919, type: 2}
+    - target: {fileID: 4098507768528981799, guid: ca4a5fbe46ff0364ba8e89f1a50c45ed, type: 3}
       propertyPath: defaultWeaponName
-      value: Sword
+      value: Unarmed
       objectReference: {fileID: 0}
     - target: {fileID: 4098507768528981799, guid: ca4a5fbe46ff0364ba8e89f1a50c45ed, type: 3}
       propertyPath: timeBetweenAttacks
@@ -10219,7 +10249,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5320333793076331521, guid: ca4a5fbe46ff0364ba8e89f1a50c45ed, type: 3}
       propertyPath: uniqueIdentifier
-      value: 57fbb877-b3ed-4ba7-a73d-c7615d18928e
+      value: player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca4a5fbe46ff0364ba8e89f1a50c45ed, type: 3}
